@@ -1,20 +1,24 @@
 #include <iostream>
+#include <string>
 
-int main(int argc, char const *argv[])
+
+int main()
 {
-    char sigh;
-    double number_one;
-    double number_two;
-   
-
-
-
-
+    char sigh = '-';
+    double number_one = 1;
+    double number_two = 2;
+    int next = 2;
+    std::string decide = "yes";
+    std::cin
+    
     std::cout << "*********************CALCULATOR************************" << std::endl;
 
-    
-        
-        std::cout << "Enter sigh (*, /, +, -): " << std::endl;
+
+    while (next == 2)
+    {
+
+        std::cout << "Enter sigh (*, /, +, -): "<< '\n';
+
         std::cin >> sigh;
 
         std::cout << "Enter your first Number: " << std::endl;
@@ -45,7 +49,20 @@ int main(int argc, char const *argv[])
             break;
         }
         
-    std::cout << "do you want to do more calculations?" << std::endl;
+        std::cout << "do you want to do more calculations?" << std::endl;
+        std::cin >> decide; 
+
+
+        if (decide == "yes") 
+        {       
+            next = 2;
+        } else{
+            next = 1;
+        }
+
+        
+
+    }
     
     std::cout << "calculator ended..." << std::endl;
 
